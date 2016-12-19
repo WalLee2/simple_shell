@@ -182,7 +182,7 @@ when it is ready to read a command, and the secondary prompt
 .B PS2
 when it needs more input to complete a command.
 .SH SEE ALSO
-.I hsh
+.I Bash
 .SH BUGS
 No known bugs.
 .SH AUTHORS
