@@ -1,6 +1,5 @@
 # Holberton School Shell (hsh)
 
-One Paragraph of project description goes here
 A simple shell for <a href="https://www.holbertonschool.com/">Holberton School</a>. This is a culmination of everything we have
 learned about the C programming thusfar.
 
