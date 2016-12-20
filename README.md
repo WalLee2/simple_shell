@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-To use hsh, you can give it comamnds. hsh commands follow the following syntax: 'command name {arguments}'.
+To use hsh, you can give it commands. hsh commands follow the following syntax: `command name {arguments}`.
 
 #### Commands
 
@@ -14,7 +14,7 @@ Typing the filename in a program located in any of the directories in the [PATH]
 ls
 ```
 
-The 'ls' command lists all directories and files in the current working directory.
+The `ls` command lists all directories and files in the current working directory.
 
 ##### List of useful commands
 `ls` - lists all files and directories of current working directory
