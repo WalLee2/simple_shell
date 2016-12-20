@@ -21,10 +21,11 @@ The 'ls' command lists all directories and files in the current working director
 
 ### Installing
 
-To clone the repo:
+To clone the repo (depending on whose repo):
 
 ```
 git clone https://github.com/WalLee2/simple_shell.git
+git clone https://github.com/jimmythongtran/simple_shell.git
 ```
 
 Here is the line to compile:
