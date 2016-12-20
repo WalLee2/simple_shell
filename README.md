@@ -10,14 +10,14 @@ To use hsh, you can give it comamnds. hsh commands follow the following syntax: 
 
 Typing the filename in a program located in any of the directories in the [PATH] runs the command.
 
-'''
+```
 ls
-'''
+```
 
 The 'ls' command lists all directories and files in the current working directory.
 
 ##### List of useful commands
-'ls' - lists all files and directories of current working directory
+`ls` - lists all files and directories of current working directory
 
 ### Prerequisites
 
