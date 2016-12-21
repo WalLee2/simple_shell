@@ -35,8 +35,8 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 ```
 
 ## Description of File Struture
-[holberton.h](holberton.h) - Header file: struct definitions, macros, function prototypes and standard libraries included
-[_getenvAndPath.c](_getenvAndPath.c) - gets the environment and seperates each directory of PATH
+[holberton.h](holberton.h) - Header file: struct definitions, macros, function prototypes and standard libraries included<br>
+[_getenvAndPATH.c](_getenvAndPATH.c) - gets the environment and seperates each directory of PATH<br>
 [_createTokenAndChildP.c](_createTokenAndChildP.c) - mallocs space to create tokens and creates child processes
 
 ## Built With
