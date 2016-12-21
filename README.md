@@ -1,6 +1,6 @@
 # Holberton School shell - a simple shell (hsh)
 
-##### Holberton Shell (hsh) is a simple command line shell. This shell was built as a project for <a href="https://www.holbertonschool.com/">Holberton School</a>. This is a culmination of everything we have learned about the C programming thusfar.
+##### Holberton Shell (hsh) is a simple command line shell. This shell was built as a project for <a href="https://www.holbertonschool.com/">Holberton School</a>. This is a culmination of everything we have learned about the C programming language thusfar.
 
 ## Getting Started
 
