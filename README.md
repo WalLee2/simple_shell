@@ -35,14 +35,9 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 ```
 
 ## Description of File Struture
-<ol>
-<li><a href="https://github.com/WalLee2/holbertonschool-low_level_programming/blob/master/simple_shell_practice/holberton.h">holberton.h</a></li> - Header file: struct definitions, macros, function prototypes and standard libraries included
-<li><a href="https://github.com/WalLee2/holbertonschool-low_level_programming/blob/master/simple_shell_practice/linkedlist_withPATH.c">linkedlist_withPATH.c</a></li> - linked list for all the directories in PATH
-<li><a href="https://github.com/WalLee2/holbertonschool-low_level_programming/blob/master/simple_shell_practice/simp_shell_main.c">simp_shell_main.c</a></li> - entry to program
-<li><a href="https://github.com/WalLee2/holbertonschool-low_level_programming/blob/master/simple_shell_practice/stringFuncs.c">stringFuncs.c</a></li> - functions useful for the string
-<li><a href="https://github.com/WalLee2/holbertonschool-low_level_programming/blob/master/simple_shell_practice/useful_extraFuncs.c">useful_extraFuncs.c</a></li> - more functions useful for the string
-</ol>
-
+[holberton.h](holberton.h) - Header file: struct definitions, macros, function prototypes and standard libraries included
+[_getenvAndPath.c](_getenvAndPath.c) - gets the environment and seperates each directory of PATH
+[_createTokenAndChildP.c](_createTokenAndChildP.c) - mallocs space to create tokens and creates child processes
 
 ## Built With
 
