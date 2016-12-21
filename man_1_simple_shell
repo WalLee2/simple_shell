@@ -11,7 +11,7 @@ is a command language interpreter that executes commands read from the standard 
 .B hsh
 is intended to be a conformant implementation of the Shell and Utilities portion of the IEEE POSIX specification (IEEE Standard 1003.1).
 .B hsh
-can be configures to be POSIX-conformatn by default.
+can be configured to be POSIX-conformatn by default.
 .LP
 .B RETURN VALUE
 Upon successful return, these functions return the contents of specified directories.
@@ -73,7 +73,7 @@ is a sequence of optional variable assignments followed by
 .B blank
 -separated words and redirections, and terminated by a
 .I control operator.
-The first word specifies the command to be executed, and is passed as argument zero. The remaining words are passed as arguments to the invoked comman.
+The first word specifies the command to be executed, and is passed as argument zero. The remaining words are passed as arguments to the invoked command.
 .LP
 The return value of a
 .I simple command
@@ -92,7 +92,7 @@ The words that the parser has marked as variable assignments (those preceding th
 2.
 The words that are not variable assignments or redirections are expanded. If any words remain after expansion, the first word is taken to be the name of the command and the remaining words are the arguments.
 .TP
-If no command name results, the variable assignments affect the current shell environment. Otherwise, the variables are added to the environment of the executed command and do not affect the current shell environment. If any of the assignments attempts to assign a value to a readonly variable, an error occurs, and the command exits with a non-zero status.
+If no command name results, the variable assignments affect the current shell environment. Otherwise, the variables are added to the environment of the executed command and do not affect the current shell environment. If any of the assignments attempts to assign a value to a read-only variable, an error occurs, and the command exits with a non-zero status.
 .SH COMMAND EXECUTION
 After a command has been split into words, if it results in a simple command and an optional list of arguments, the following actions are taken.
 .PP
@@ -106,7 +106,7 @@ searches each element of the
 .B PATH
 for a directory containing an executable file by that name.
 .B hsh
-uses a hash table to remember the full pathnames of executable files. A full seach of the directories in
+uses a hash table to remember the full pathnames of executable files. A full search of the directories in
 .B PATH
 is performed only if the command is not found in the hash table.
 .SH COMMAND EXECUTION ENVIRONMENT
