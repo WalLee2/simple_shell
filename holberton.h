@@ -7,6 +7,14 @@
 #include <sys/wait.h>
 #include <stddef.h>
 extern char **environ;
+/**
+ *struct builtins_s - a struct that points to the string in
+ *an array a struct
+ *@command: a variable that points to the string in my array of
+ *structs
+ *@ptr: a variable that is a function pointer that takes in a char **
+ *as an argument
+ */
 typedef struct builtins_s{
 	char *command;
 	void (*ptr)(char **);
