@@ -47,7 +47,7 @@ if that file exists. After reading that file, it looks for
 .I ~/.hsh_profile, ~/.hsh_login, and ~/.profile,
 in that order, and reads and executes commands from the first one that exists and is readable.
 .LP
-When a login shell exits, 
+When a login shell exits,
 .B hsh
 reads and executes commands from the file
 .I ~/.hsh_logout,
@@ -100,7 +100,7 @@ If the command name contains no slashes, the shell attempts to locate it. If the
 .B FUNCTIONS.
 If the name does not match a function, the shell searches for it in the list of shell builtins. If a match is found, that builtin is invoked.
 .PP
-If the name is neither a shell function nor a builtin, and contains no slashes, 
+If the name is neither a shell function nor a builtin, and contains no slashes,
 .B hsh
 searches each element of the
 .B PATH
