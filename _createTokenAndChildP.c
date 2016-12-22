@@ -76,8 +76,7 @@ void _createChild(char **arrayStr)
 		execve_check = execve(arrayStr[0], arrayStr, environ);
 		if (execve_check == -1)
 		{
-			write(STDOUT_FILENO,
-			      "This command does not exist.", 28);
+			perror("This command does not exist.");
 			write(STDOUT_FILENO, "\n", 1);
 			free(arrayStr);
 			_exit(1);

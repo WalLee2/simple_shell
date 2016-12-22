@@ -41,6 +41,7 @@ int checking_built(char **arr)
 void ex_it(char **arr)
 {
 	free(arr);
+	write(STDOUT_FILENO, "Exiting the process\n", 21);
 	_exit(0);
 }
 /**
