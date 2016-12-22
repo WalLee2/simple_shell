@@ -1,7 +1,7 @@
 #include "holberton.h"
-
 /**
- *_getenv - A function that compares the input value to an environment variable
+ *_getenv - A function that compares the input
+ *value to an environment variable.
  *If the environment variable exists, the result will print out
  *@name: The passed in variable from the main function
  *Return: The pointer to the output of the environment variable or
@@ -11,7 +11,7 @@ char *_getenv(const char *name)
 {
 	int i, j;
 
-	if (name != NULL)
+	if (name != NULL || name[0] != '\0')
 	{
 		i = 0;
 		while (environ[i] != NULL)
@@ -29,14 +29,12 @@ char *_getenv(const char *name)
 	}
 	return (NULL);
 }
-
 /**
- * _getPATH - a function that separates each directory of PATH on a newline
- * @str: a pointer to the value of PATH
- * @tok_UsInput: the tokenized user input
- * Return: a linked list that stores each directory in the PATH
+ *_getPATH - a function that separates each directory of PATH on a newline
+ *@str: a pointer to the value of PATH
+ *@tok_UsInput: the tokenized user input
+ *Return: a linked list that stores each directory in the PATH
  */
-
 char **_getPATH(char *str, char **tok_UsInput)
 {
 	char *tok_PATH, *tempstr, *fwd_slash, **temp_arr, *PATH_cpy;
@@ -60,21 +58,20 @@ char **_getPATH(char *str, char **tok_UsInput)
 		_exit(1);
 	}
 	tempstr = malloc(sizeof(char) * BUFSIZE);
+	if (tempstr == NULL)
+	{
+		free(tempstr);
+		_exit(1);
+	}
 	while (tok_PATH != NULL)
 	{
-		if (tempstr == NULL)
-		{
-			free(tempstr);
-			_exit(1);
-		}
 		_strcat(tempstr, tok_PATH);
 		_strcat(tempstr, fwd_slash);
 		_strcat(tempstr, tok_UsInput[a]);
 		tok_PATH = strtok(NULL, ": ");
-		temp_arr[i] = strdup(tempstr);
+		temp_arr[i] = _strdup(tempstr);
 		_memset(tempstr, 0, BUFSIZE);
 		i++;
 	}
-	free(tempstr);
 	return (temp_arr);
 }
