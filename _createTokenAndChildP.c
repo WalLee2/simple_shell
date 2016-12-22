@@ -48,7 +48,7 @@ void _createChild_P(char **arrayStr, char **_getPATH_res)
 		while (_getPATH_res[i] != NULL)
 			if (execve(_getPATH_res[i], arrayStr, NULL) == -1)
 				i++;
-		write(STDOUT_FILENO,
+		write(STDERR_FILENO,
 		      "This command does not exist.", 28);
 		write(STDOUT_FILENO, "\n", 1);
 	}
